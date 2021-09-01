@@ -149,7 +149,10 @@ void function InitWeaponScripts()
 		MeleeShadowsquadHands_Init()
 		MpWeaponShadowsquadHandsPrimary_Init()
 		MDLSpawner_Init()
+
 	#endif
+
+    Physgun_Init()
 
 	MpAbilityGibraltarShield_Init()
 	MpWeaponBubbleBunker_Init()
@@ -4991,7 +4994,7 @@ array<entity> function GetFriendlySquadArrayForPlayer_AliveConnected( entity pla
 		if ( !IsAlive( player ) )
 			return []
 		#if SERVER
-		
+
 		// if (teamsWithPlayersAlive.len() == 0)
 		// {
 		// 	teamsWithPlayersAlive.append( team )
